@@ -144,13 +144,13 @@ async function runApiExtraction({
           extractorMessageReporting: {
             default: {
               logLevel: 'warning' as ExtractorLogLevel.Warning,
-              addToApiReportFile: true,
+              // addToApiReportFile: true,
             },
           },
           tsdocMessageReporting: {
             default: {
               logLevel: 'warning' as ExtractorLogLevel.Warning,
-              addToApiReportFile: true,
+              // addToApiReportFile: true,
             },
           },
         },
