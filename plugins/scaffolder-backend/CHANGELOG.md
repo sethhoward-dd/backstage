@@ -1,5 +1,31 @@
 # @backstage/plugin-scaffolder-backend
 
+## 0.9.6
+
+### Patch Changes
+
+- d8ffec739: Add built-in publish action for creating GitHub pull requests.
+- 7abec4dbc: Fix for the `file://` protocol check in the `FilePreparer` being too strict, breaking Windows.
+- d840d30bc: Bitbucket server needs username to be set as well as the token or appPassword for the publishing process to work.
+
+  ```yaml
+  integrations:
+    bitbucket:
+      - host: bitbucket.mycompany.com
+        apiBaseUrl: https://bitbucket.mycompany.com/rest/api/1.0
+        token: token
+        username: username
+  ```
+
+- a376e3ee8: Adds a collaborator field to GitHub publish action for multiple users and access levels
+- 423a514c3: Fix execution of the GitHub Pull Request publish action on Windows.
+- 0b7fd7a9d: Fix bug in pull request sample template.
+- Updated dependencies [bb5055aee]
+- Updated dependencies [5d0740563]
+- Updated dependencies [442f34b87]
+  - @backstage/catalog-model@0.7.7
+  - @backstage/catalog-client@0.3.10
+
 ## 0.9.5
 
 ### Patch Changes
